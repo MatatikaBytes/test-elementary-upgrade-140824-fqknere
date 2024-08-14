@@ -1,0 +1,27 @@
+{
+  "plugin_type": "transforms",
+  "name": "dbt-spotify",
+  "namespace": "tap_spotify",
+  "variant": "matatika",
+  "label": "dbt-spotify",
+  "repo": "https://github.com/Matatika/dbt-tap-spotify",
+  "pip_url": "https://github.com/Matatika/dbt-tap-spotify@v0.4.0",
+  "description": " Spotify is an online music streaming platform.\nMatatika extracts the data from the Spotify API and creates out of the box insights.\n",
+  "requires": {
+    "transformers": [
+      {
+        "name": "dbt",
+        "variant": "dbt-labs"
+      }
+    ],
+    "extractors": [
+      {
+        "name": "tap-spotify",
+        "variant": "matatika"
+      }
+    ]
+  },
+  "vars": {
+    "schema": "{{ env_var('DBT_SOURCE_SCHEMA') }}"
+  }
+}

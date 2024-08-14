@@ -14,6 +14,10 @@ plugins:
   - name: target-postgres
     variant: matatika
     pip_url: git+https://github.com/Matatika/pipelinewise-target-postgres@v0.2.0
+  transforms:
+  - name: dbt-spotify
+    variant: matatika
+    pip_url: https://github.com/Matatika/dbt-tap-spotify@v0.4.0
   transformers:
   - name: dbt
     variant: dbt-labs
@@ -22,3 +26,16 @@ plugins:
   - name: files-dbt
     variant: matatika
     pip_url: git+https://github.com/Matatika/files-dbt@v1.0.x.2
+  - name: analyze-dbt-models
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/analyze-dbt-models@v0.2.0
+  - name: analyze-spotify
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/analyze-spotify@v0.4.1
+  utilities:
+  - name: matatika
+    variant: matatika
+    pip_url: matatika~=1.16.0
+  - name: dbt-artifacts
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/dbt-artifacts-ext.git
