@@ -1,5 +1,6 @@
 version: pipelines/v0.1
 name: Spotify
+schedule: 0 0 */6 * * *
 timeout: 0
 max_retries: 0
 data_components:
