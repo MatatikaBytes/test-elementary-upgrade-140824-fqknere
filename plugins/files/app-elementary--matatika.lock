@@ -37,8 +37,5 @@
         "variant": "matatika"
       }
     ]
-  },
-  "update": {
-    "*.yml": "true"
   }
 }
