@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: new_sources
+    schema: "{{ env_var('DBT_TARGET_SCHEMA') }}"
+    description: NEW SOURCES Data sync'd from Spotify.
+    tables:
+      - name: user_top_tracks_st_stream
+        description: Source table for user top tracks short term.
+        columns:
+          - name: id
+            description: Track ID
+          - name: rank
+            description: Rank of the returned record
+          - name: synced_at
+            description: Timestamp of when the record was synced
+        tests:
+          - elementary.freshness_anomalies:
+              timestamp_column: "_sdc_batched_at"
+          - elementary.volume_anomalies:
+              timestamp_column: "_sdc_batched_at"
