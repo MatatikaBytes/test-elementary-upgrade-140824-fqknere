@@ -37,7 +37,8 @@
         "variant": "matatika"
       }
     ]
-  }  "update": {
+  },
+  "update": {
     "analyze/datasets/elementary/*.yml": "true"
     "analyze/datasets/elementary/dashboard/bars/*.yml": "true"
     "analyze/datasets/elementary/dashboard/doughnuts/*.yml": "true"
