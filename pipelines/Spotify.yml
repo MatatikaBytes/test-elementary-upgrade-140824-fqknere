@@ -7,3 +7,5 @@ data_components:
 - tap-spotify
 - Warehouse
 - dbt
+properties:
+  Warehouse.port: 1111
