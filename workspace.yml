@@ -1,8 +1,5 @@
-# This file is managed by the 'app-elementary' file bundle and updated automatically when `meltano upgrade` is run.
-# To prevent any manual changes from being overwritten, remove the file bundle from `meltano.yml` or disable automatic updates:
-#     meltano config --plugin-type=files app-elementary set _update workspace.yml false
-
-version: workspaces/v0.1
+version: workspaces/v0.2
+name: test-elementary-upgrade-140824
 app_properties:
   DASHBOARD_CONTENT: |-
     <style jsx>{`
@@ -149,3 +146,4 @@ plugin_paths:
 - plugins
 data_store_paths:
 - datastores
+state_datastore: Warehouse
