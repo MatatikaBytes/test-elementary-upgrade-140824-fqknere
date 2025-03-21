@@ -1,9 +1,8 @@
 version: pipelines/v0.1
-name: Spotify
-schedule: 0 0 */6 * * *
+name: Spreadsheets S3
 timeout: 0
 max_retries: 0
 data_components:
-- tap-spotify
+- tap-spreadsheets-s3
 - Warehouse
 - dbt

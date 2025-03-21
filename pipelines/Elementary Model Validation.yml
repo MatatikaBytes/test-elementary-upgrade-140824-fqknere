@@ -1,11 +1,8 @@
-# This file is managed by the 'app-elementary' file bundle and updated automatically when `meltano upgrade` is run.
-# To prevent any manual changes from being overwritten, remove the file bundle from `meltano.yml` or disable automatic updates:
-#     meltano config --plugin-type=files app-elementary set _update pipelines/Elementary Model Validation.yml false
-
 version: pipelines/v0.1
 name: Elementary Model Validation
 schedule: 0 0 12 * * *
 timeout: 1800
+max_retries: 0
 script: |-
   export STORE_TEST_RESULTS=true
 
@@ -58,8 +55,3 @@ data_components:
 - elementary
 - notebook
 - sendgrid
-properties:
-  notebook.path: notebook/data_quality_report.ipynb
-  sendgrid.body: email_template.html
-  sendgrid.title: Daily Data Quality Report
-  sendgrid.content_type: text/html
