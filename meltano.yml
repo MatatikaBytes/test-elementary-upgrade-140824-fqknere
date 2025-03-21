@@ -10,6 +10,18 @@ plugins:
   - name: tap-spotify
     variant: matatika
     pip_url: git+https://github.com/Matatika/tap-spotify@v0.5.0
+  - name: tap-spreadsheets-s3
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/tap-spreadsheets-anywhere@v0.3.6
+  - name: tap-spreadsheets-azure
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/tap-spreadsheets-anywhere@v0.3.6
+  - name: tap-spreadsheets-gcs
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/tap-spreadsheets-anywhere.git@64c3b8c
+  - name: tap-spreadsheets-anywhere
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/tap-spreadsheets-anywhere@v0.3.6
   loaders:
   - name: target-postgres
     variant: matatika
