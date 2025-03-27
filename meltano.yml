@@ -38,6 +38,7 @@ plugins:
         format: csv
         key_properties:
         - test
+        - two
   loaders:
   - name: target-postgres
     variant: matatika
