@@ -1,0 +1,8 @@
+version: pipelines/v0.1
+name: S3 Specific
+timeout: 0
+max_retries: 0
+data_components:
+- s3-specific
+- Warehouse
+- dbt

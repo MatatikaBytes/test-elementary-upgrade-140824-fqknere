@@ -22,6 +22,22 @@ plugins:
   - name: tap-spreadsheets-anywhere
     variant: matatika
     pip_url: git+https://github.com/Matatika/tap-spreadsheets-anywhere@v0.3.6
+  - name: s3-specific
+    inherit_from: tap-spreadsheets-s3
+    config:
+      tables:
+      - path: input://
+        name: one
+        pattern: file*
+        format: csv
+        key_properties:
+        - test
+      - path: input://
+        name: two
+        pattern: file*
+        format: csv
+        key_properties:
+        - test
   loaders:
   - name: target-postgres
     variant: matatika
