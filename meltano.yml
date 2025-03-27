@@ -30,6 +30,7 @@ plugins:
         name: one
         pattern: file*
         format: csv
+        start_date: 2000-01-01T00:00:00Z
         key_properties:
         - test
       - path: input://
