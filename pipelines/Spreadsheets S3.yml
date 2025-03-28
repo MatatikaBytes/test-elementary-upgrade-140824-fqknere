@@ -6,5 +6,3 @@ data_components:
 - tap-spreadsheets-s3
 - Warehouse
 - dbt
-properties:
-  tap-spreadsheets-s3.tables: '[{ "path":"input://","name":"one", "pattern": "file*", "start_date": "2001-01-01T00:00:00Z", "key_properties": [ "docket"], "format": "csv" }, { "path":"input://","name":"two", "pattern": "file*", "start_date": "2001-01-01T00:00:00Z", "key_properties": [ "docket"], "format": "csv" }]'

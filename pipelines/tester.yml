@@ -1,0 +1,14 @@
+version: pipelines/v0.1
+name: tester
+timeout: 0
+max_retries: 0
+script: echo 'hello world'
+data_components:
+- tap-spreadsheets-s3
+- target-postgres
+- dbt
+actions:
+- tap-spreadsheets-s3
+- target-postgres
+- dbt:deps
+- dbt:my-models
