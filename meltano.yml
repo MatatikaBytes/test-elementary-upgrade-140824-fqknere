@@ -30,7 +30,7 @@ plugins:
         name: one
         pattern: file*
         format: csv
-        start_date: 2000-01-01T00:00:00Z
+        start_date: 2000-01-01T00:00:00
         key_properties:
         - test
       - path: input://
@@ -40,6 +40,9 @@ plugins:
         key_properties:
         - test
         - two
+  - name: tap-spreadsheets-sftp
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/tap-spreadsheets-anywhere@v0.3.7
   loaders:
   - name: target-postgres
     variant: matatika
