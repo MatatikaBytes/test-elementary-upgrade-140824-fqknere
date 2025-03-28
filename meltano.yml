@@ -55,6 +55,10 @@ plugins:
   - name: dbt
     variant: dbt-labs
     pip_url: "dbt-core~=1.3.0 dbt-postgres~=1.3.0 dbt-snowflake~=1.3.0\n"
+    commands:
+      my-models:
+        args: run --select calendar
+        description: this is the description
   files:
   - name: files-dbt
     variant: matatika
