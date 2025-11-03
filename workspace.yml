@@ -135,6 +135,7 @@ app_properties:
     ]
   DASHBOARD_PAGE_TITLE: Data Quality Dashboard
 default_data_store: Warehouse
+state_data_store: Warehouse
 dataset_paths:
 - analyze/datasets
 - .meltano/analyze/datasets
@@ -146,4 +147,3 @@ plugin_paths:
 - plugins
 data_store_paths:
 - datastores
-state_datastore: Warehouse
